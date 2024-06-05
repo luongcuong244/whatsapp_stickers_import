@@ -1,0 +1,31 @@
+name: whatsapp_stickers_import
+description: WhatsApp Stickers plugin for Flutter.
+version: 1.0.0
+homepage: https://github.com/luongcuong244/whatsapp_stickers_import
+
+environment:
+  sdk: '>=2.16.0 <3.0.0'
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  meta: ^1.1.8
+  flutter_cache_manager:
+    git:
+      url: https://github.com/luongcuong244/flutter_cache_manager
+      path: flutter_cache_manager
+      ref: develop
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: dev.applicazza.flutter.plugins.whatsapp_stickers_import
+        pluginClass: WhatsappStickersPlugin
+      ios:
+        pluginClass: WhatsappStickersPlugin
